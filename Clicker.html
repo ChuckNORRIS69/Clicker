@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <div id="score">0</div>
+    <div id="button">CLICK ME</div>
+    <script>
+        let counter = 0;
+
+        document.getElementById('button').onclick = () => {
+            counter = counter + 1;
+            document.getElementById('score').innerText = counter;
+        };
+    </script>
+</body>
+</html>
